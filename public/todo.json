@@ -1,0 +1,14 @@
+[
+    {
+        "todo":"react-training",
+        "status":"Completed"
+    },
+    {
+        "todo":"marketplace-training",
+        "status":"In-Progress"
+    },
+    {
+        "todo":"dEstimation-training",
+        "status":"Pending"
+    }
+]

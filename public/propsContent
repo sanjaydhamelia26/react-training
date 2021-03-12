@@ -1,0 +1,35 @@
+=================================================================================================== 
+
+                    render() {
+                        return(
+                            <div>
+                            <PropsDemo value="React-Training"><PropsDemo>
+                            </div>
+                        );
+                    }
+
+
+===================================================================================================
+                    
+                    
+                    import React from 'react';
+                    import NavigationPage from "./NavigationPage";
+
+                    class PropsDemo extends React.Component {
+
+                        constructor(props) {
+                            super(props);
+                        }
+
+                        render() {
+                            return(
+                                <div>
+                                <NavigationPage project="React Training"></NavigationPage>
+                                <div>Props Value</div>
+                                <label>{this.props.value}</label>
+                                </div>
+                            );
+                        }
+                    }
+
+                    export default PropsDemo;

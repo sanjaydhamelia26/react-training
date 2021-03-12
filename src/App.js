@@ -4,11 +4,12 @@ import LifeCycle from './training/LifeCycle';
 import PropsDemo from './training/PropsDemo';
 import HomePage from './training/HomePage';
 import StateDemo from './training/StateDemo';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,14 +19,19 @@ function App() {
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
-        >
+          >
           Learn React
-        </a>
-      <LifeCycle></LifeCycle>
-      <PropsDemo value="Welcome to props demo example."></PropsDemo>
-      <HomePage></HomePage>
-      <StateDemo></StateDemo>
-      </header>
+        </a> 
+      </header> */}
+
+      <Router>
+        <Switch>
+          <Route exact path='/' component={HomePage}></Route>  
+          <Route exact path='/props-demo' component={PropsDemo}></Route>  
+          <Route exact path='/state-demo' component={StateDemo}></Route>  
+          <Route exact path='/lifecycle-demo' component={LifeCycle}></Route>  
+          </Switch>
+      </Router>
     </div>
   );
 }
