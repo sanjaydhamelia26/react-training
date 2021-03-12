@@ -3,7 +3,7 @@
                     render() {
                         return(
                             <div>
-                            <PropsDemo value="React-Training"><PropsDemo>
+                            <PropsDemo value="Training"><PropsDemo>
                             </div>
                         );
                     }
@@ -24,7 +24,7 @@
                         render() {
                             return(
                                 <div>
-                                <NavigationPage project="React Training"></NavigationPage>
+                                <NavigationPage project="Training"></NavigationPage>
                                 <div>Props Value</div>
                                 <label>{this.props.value}</label>
                                 </div>

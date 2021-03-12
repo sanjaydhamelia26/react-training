@@ -5,6 +5,7 @@ import PropsDemo from './training/PropsDemo';
 import HomePage from './training/HomePage';
 import StateDemo from './training/StateDemo';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import FullReload from './training/FullReload';
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
           <Route exact path='/' component={HomePage}></Route>  
           <Route exact path='/props-demo' component={PropsDemo}></Route>  
           <Route exact path='/state-demo' component={StateDemo}></Route>  
-          <Route exact path='/lifecycle-demo' component={LifeCycle}></Route>  
+          <Route exact path='/lifecycle-demo' component={LifeCycle}></Route>
+          <Route exact path='/fullreload-demo' component={FullReload}></Route>
           </Switch>
       </Router>
     </div>

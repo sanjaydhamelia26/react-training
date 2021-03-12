@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 class NavigationPage extends React.Component {
     constructor(props) {
@@ -26,6 +26,9 @@ class NavigationPage extends React.Component {
                  </li>
                  <li className="nav-item">
                      <NavLink activeClassName="active" className="navbar__link nav-link" to="/lifecycle-demo">Life Cycle Demo</NavLink>
+                 </li>
+                 <li className="nav-item">
+                     <a activeClassName="active" className="navbar__link nav-link" href="/fullreload-demo">Full Reload</a>
                  </li>
                  </ul>
                  </div>

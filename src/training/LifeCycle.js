@@ -8,7 +8,7 @@ class LifeCycle extends React.Component {
         super(props);
 
         this.state = {
-            todos : new Array()
+            todos : []
         }
     }
 
@@ -25,7 +25,7 @@ class LifeCycle extends React.Component {
                     todos : response
                 })
             });
-        }, 3000);  
+        }, 5000);  
 
         fetch("lifeCycleContent")
         .then(r => r.text())
@@ -48,6 +48,7 @@ class LifeCycle extends React.Component {
     render() {
         return(
             <div>
+            
             <NavigationPage project="Training"></NavigationPage>
                <table style={{width: '30%'}} className="table">
                    <thead>

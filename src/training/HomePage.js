@@ -10,7 +10,7 @@ class HomePage extends React.Component {
     render() {
         return (
             <div>
-                <NavigationPage project="Training"></NavigationPage>
+                <NavigationPage project="Actual Training Day" test="Testing in training"></NavigationPage>
                 <ol className="text-left mt-4">
                     <h4><li className="text-dark font-weight-bold">Introduction to ReactJS</li></h4>
                     <h4><li className="text-dark font-weight-bold">Class vs Functional Component</li></h4>
